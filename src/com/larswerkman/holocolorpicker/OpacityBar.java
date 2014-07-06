@@ -520,6 +520,7 @@ public class OpacityBar extends View {
 		state.putParcelable(STATE_PARENT, superState);
 		state.putFloatArray(STATE_COLOR, mHSVColor);
 		state.putInt(STATE_OPACITY, getOpacity());
+		state.putBoolean(STATE_ORIENTATION, mOrientation);
 
 		return state;
 	}
@@ -533,5 +534,6 @@ public class OpacityBar extends View {
 
 		setColor(Color.HSVToColor(savedState.getFloatArray(STATE_COLOR)));
 		setOpacity(savedState.getInt(STATE_OPACITY));
+		mOrientation = savedState.getBoolean(STATE_ORIENTATION, ORIENTATION_DEFAULT);
 	}
 }

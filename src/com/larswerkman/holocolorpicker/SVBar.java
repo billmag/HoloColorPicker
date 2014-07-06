@@ -523,6 +523,7 @@ public class SVBar extends View {
 		} else {
 			state.putFloat(STATE_VALUE, hsvColor[2]);
 		}
+		state.putBoolean(STATE_ORIENTATION, mOrientation);
 
 		return state;
 	}
@@ -540,5 +541,6 @@ public class SVBar extends View {
 		} else {
 			setValue(savedState.getFloat(STATE_VALUE));
 		}
+		mOrientation = savedState.getBoolean(STATE_ORIENTATION, ORIENTATION_DEFAULT);
 	}
 }

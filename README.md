@@ -1,6 +1,6 @@
 <h1>Android Holo ColorPicker</h1>
 
-Marie Schweiz made a beautifull new design for the Holo ColorPicker which added a lot of new functionality.
+Marie Schweiz <http://marie-schweiz.de/> made a beautifull new design for the Holo ColorPicker which added a lot of new functionality.
 
 You can now set the Saturation and Value of a color.
 Also its possible to set the Opacity for a color.
@@ -13,7 +13,7 @@ Demo can be found on my Google Drive [here](https://docs.google.com/file/d/0Bwcl
 ![image](https://lh4.googleusercontent.com/-GtJYDCQdnVo/UVW4ML7WIuI/AAAAAAAAAj4/YKHEUnhvLhA//framed_colorpicker.png)
 
 <h3>UDPATE</h3>
-Now bars can change there orientation, Thanks to [tonyr59h](https://github.com/tonyr59h)
+Now bars can change their orientation, Thanks to [tonyr59h](https://github.com/tonyr59h)
 also the gradle build version was updated to 0.7.+
 ![image](https://lh5.googleusercontent.com/-3KSukk_S94Y/UvKiNER-OBI/AAAAAAAAA-k/8SPfOmFhLjE//device-2014-02-05-180704_framed.png)
 
@@ -94,7 +94,7 @@ saturationBar.setOnSaturationChangeListener(new OnSaturationChangeListener …)
 Adding it as a dependency to your project.
 
 	dependencies {
-    	compile 'com.larswerkman:HoloColorPicker:1.4'
+    	compile 'com.larswerkman:HoloColorPicker:1.5'
 	}
 
 <H2>License</H2>

@@ -31,6 +31,8 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
+import com.larswerkman.holocolorpicker.R;
+
 public class OpacityBar extends View {
 
 	/*
@@ -107,7 +109,7 @@ public class OpacityBar extends View {
 	 * {@code true} if the user clicked on the pointer to start the move mode. <br>
 	 * {@code false} once the user stops touching the screen.
 	 * 
-	 * @see #onTouchEvent(MotionEvent)
+	 * @see #onTouchEvent(android.view.MotionEvent)
 	 */
 	private boolean mIsMovingPointer;
 
@@ -331,7 +333,7 @@ public class OpacityBar extends View {
 		canvas.drawCircle(cX, cY, mBarPointerHaloRadius, mBarPointerHaloPaint);
 		// Draw the pointer.
 		canvas.drawCircle(cX, cY, mBarPointerRadius, mBarPointerPaint);
-	};
+	}
 
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
@@ -435,8 +437,7 @@ public class OpacityBar extends View {
 	/**
 	 * Set the pointer on the bar. With the opacity value.
 	 * 
-	 * @param saturation
-	 *            float between 0 > 255
+	 * @param opacity float between 0 and 255
 	 */
 	public void setOpacity(int opacity) {
 		mBarPointerPosition = Math.round((mOpacToPosFactor * opacity))
@@ -469,8 +470,7 @@ public class OpacityBar extends View {
 	/**
 	 * Calculate the color selected by the pointer on the bar.
 	 * 
-	 * @param coord
-	 *            Coordinate of the pointer.
+	 * @param coord Coordinate of the pointer.
 	 */
         private void calculateColor(int coord) {
     	    coord = coord - mBarPointerHaloRadius;
@@ -505,7 +505,7 @@ public class OpacityBar extends View {
 	 * WARNING: Don't change the color picker. it is done already when the bar
 	 * is added to the ColorPicker
 	 * 
-	 * @see ColorPicker#addSVBar(SVBar)
+	 * @see com.larswerkman.holocolorpicker.ColorPicker#addSVBar(SVBar)
 	 * @param picker
 	 */
 	public void setColorPicker(ColorPicker picker) {
